@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en" class="no-js" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Berardino Barile</title>
+    <meta
+      name="description"
+      content="Berardino Barile PhD - Research Scientist in Machine Learning & AI, Computer Vision and Causal Inference."
+    />
+    <meta name="theme-color" content="#060d11" />
+    <link rel="icon" type="image/png" href="/assets/logo-280.png" />
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.remove('no-js');
+        d.classList.add('js');
+        var t = 'dark';
+        try {
+          var s = localStorage.getItem('bnormal-theme');
+          if (s === 'light' || s === 'dark') t = s;
+        } catch (e) {}
+        d.setAttribute('data-theme', t);
+        // Failsafe: if the animation code never boots, show everything.
+        setTimeout(function () {
+          if (!window.__animBooted) d.classList.add('anim-fallback');
+        }, 3000);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    />
+    <script type="module" crossorigin src="/assets/main-CiJ8aK3r.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/offscreen-BXINgrbA.js">
+    <link rel="stylesheet" crossorigin href="/assets/offscreen-CxXICpaq.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+    <header id="site-header" class="site-header" data-hero-in>
+      <div class="container site-header__inner">
+        <a class="brand" href="#hero" aria-label="Berardino Barile, back to the top">
+          <img src="/assets/logo-280.png" alt="Logo" width="36" height="35" />
+          <span class="brand__name">Berardino Barile</span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <a class="btn btn--pill btn--small" href="/assets/CV_Berardino_Barile.pdf" download>
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i><span>CV</span>
+          </a>
+          <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Light theme">
+            <i class="fa-solid fa-moon theme-toggle__moon" aria-hidden="true"></i>
+            <i class="fa-solid fa-sun theme-toggle__sun" aria-hidden="true"></i>
+          </button>
+          <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- ============ HERO ============ -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <canvas id="hero-network" class="hero__network" aria-hidden="true"></canvas>
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <div class="hero__text">
+            <p class="hero__eyebrow" data-hero-in>
+              <span class="live-dot" aria-hidden="true"></span>
+              Mila AI Institute · McGill &amp; Concordia
+            </p>
+            <h1 id="hero-title" class="hero__name" data-hero-in>Berardino Barile <span class="grad">PhD</span></h1>
+            <p id="hero-subtitle" class="hero__subtitle" data-hero-in>Research Scientist | Machine Learning &amp; AI | Computer Vision | Causal Inference</p>
+            <p class="hero__cta" data-hero-in>
+              If you want to know more
+              <a class="btn btn--glow" href="https://berardino-chatbot-assistent.streamlit.app/" target="_blank" rel="noopener">talk to my CV<i class="fa-solid fa-comments" aria-hidden="true"></i></a>
+              😉
+            </p>
+            <div class="hero__actions" data-hero-in>
+              <a class="btn btn--ghost" href="blog.html"><i class="fa-solid fa-feather-pointed" aria-hidden="true"></i>Follow my Blog</a>
+              <img class="hero__logo" src="/assets/logo-280.png" alt="Logo" width="70" height="70" />
+            </div>
+          </div>
+
+          <div class="hero__portrait" data-hero-in>
+            <div class="portrait">
+              <span class="portrait__ring" aria-hidden="true"></span>
+              <span class="portrait__halo" aria-hidden="true"></span>
+              <img
+                class="portrait__img"
+                src="/assets/profile-640.jpg"
+                srcset="/assets/profile-640.jpg 640w, /assets/profile.jpg 1024w"
+                sizes="(max-width: 900px) 190px, 320px"
+                alt="Berardino Barile"
+                width="640"
+                height="640"
+                fetchpriority="high"
+              />
+              <span class="orbit-chip orbit-chip--1" aria-hidden="true"><i class="fa-solid fa-diagram-project"></i>Causal ML</span>
+              <span class="orbit-chip orbit-chip--2" aria-hidden="true"><i class="fa-solid fa-eye"></i>Computer Vision</span>
+              <span class="orbit-chip orbit-chip--3" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i>Generative AI</span>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about" data-hero-in aria-label="Scroll to About me">
+          <span class="scroll-cue__mouse" aria-hidden="true"><span class="scroll-cue__wheel"></span></span>
+          <span class="scroll-cue__label">Scroll</span>
+        </a>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section section--about" aria-labelledby="about-title">
+        <div class="aurora" aria-hidden="true"><span class="aurora__blob aurora__blob--1"></span><span class="aurora__blob aurora__blob--2"></span></div>
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">01 / About</p>
+            <h2 id="about-title" class="section-title" data-split>About me</h2>
+          </header>
+          <div class="about-grid">
+            <div class="about__text" data-reveal-item>
+              <p class="lead">I am a <strong class="hl">Senior Research Scientist</strong> with a double doctoral degree in <strong class="hl">Machine Learning</strong> and an M.Sc in <strong class="hl">Statistics</strong>. With a rich background spanning both the public and private sectors, I have served as a Consultant and Senior Research Scientist, contributing to a diverse range of projects. My expertise is evidenced by a multitude of peer-reviewed journal publications. Currently, I am deeply engaged in research areas such as ML for Computer Vision, <strong class="hl">Generative AI</strong>, Causal Inference, Causal ML and Statistical Methods. I am driven by a perpetual curiosity, always seeking new opportunities to expand my knowledge and skills.</p>
+              <p class="about__langs"><i class="fa-solid fa-language" aria-hidden="true"></i> Italian native · English advanced · French advanced · Spanish beginner</p>
+            </div>
+            <div class="stats" data-reveal-group>
+              <div class="card stat" data-reveal-item>
+                <span class="stat__num" data-count="2">2</span>
+                <span class="stat__label">Doctoral degrees</span>
+              </div>
+              <a class="card stat stat--link" href="publications.html#contributions" aria-label="8 scientific contributions, open the list of papers" data-reveal-item>
+                <span class="stat__num" data-count="8">8</span>
+                <span class="stat__label">Scientific contributions</span>
+                <span class="stat__go" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+              <div class="card stat" data-reveal-item>
+                <span class="stat__num" data-count="5">5</span>
+                <span class="stat__label">Professional roles</span>
+              </div>
+              <div class="card stat" data-reveal-item>
+                <span class="stat__num" data-count="4">4</span>
+                <span class="stat__label">Countries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section id="education" class="section section--alt" aria-labelledby="education-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">02 / Education</p>
+            <h2 id="education-title" class="section-title" data-split>Education</h2>
+          </header>
+          <div class="timeline">
+            <span class="timeline__track" aria-hidden="true"><span class="timeline__fill"></span></span>
+            <ol class="timeline__list" aria-label="Education timeline">
+            <li class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+              <article class="card tl-card" data-reveal-item data-reveal-from="left">
+                <span class="tl-card__badge mono" aria-hidden="true">2019-2022</span>
+                <h3 class="tl-card__title">Double PhD in Computer Science</h3>
+                <p class="tl-card__org">KU Leuven &amp; Université Claude Bernard Lyon 1 <span class="date">(2019-2022)</span></p>
+                <p class="tl-card__thesis">Thesis: <a href="https://theses.eurasip.org/theses/944/machine-learning-methods-for-multiple-sclerosis/" target="_blank" rel="noopener"><em>Machine Learning Methods for Multiple Sclerosis Classification and Prediction Using MRI Brain Connectivity</em></a></p>
+                <ul class="tl-card__list">
+                  <li>Research focused on developing advanced machine learning models for medical imaging and neuroscience applications.</li>
+                  <li>Worked on Probabilistic Deep Learning, Bayesian Inference, and Causal ML.</li>
+                  <li>Collaborated with top researchers and contributed to multiple peer-reviewed publications.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+              <article class="card tl-card" data-reveal-item data-reveal-from="right">
+                <span class="tl-card__badge mono" aria-hidden="true">2011-2013</span>
+                <h3 class="tl-card__title">Master's Degree in Statistics</h3>
+                <p class="tl-card__org">La Sapienza University of Rome <span class="date">(2011-2013)</span></p>
+                <p class="tl-card__thesis">Thesis: <em>Short and Long Structural Effects of the International Bank System: A Structural-VAR Approach</em></p>
+                <p class="tl-card__grade"><i class="fa-solid fa-award" aria-hidden="true"></i> Grade: 110/110 with honors</p>
+              </article>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+              <article class="card tl-card" data-reveal-item data-reveal-from="left">
+                <span class="tl-card__badge mono" aria-hidden="true">2008-2011</span>
+                <h3 class="tl-card__title">Bachelor's Degree in Statistics</h3>
+                <p class="tl-card__org">La Sapienza University of Rome <span class="date">(2008-2011)</span></p>
+                <p class="tl-card__thesis">Thesis: <em>Purchase Power Parity (PPP) and Equilibrium Exchange Rate in the Financial Market</em></p>
+                <p class="tl-card__grade"><i class="fa-solid fa-award" aria-hidden="true"></i> Grade: 110/110 with honors</p>
+              </article>
+            </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">03 / Experience</p>
+            <h2 id="experience-title" class="section-title" data-split>Professional Experience</h2>
+          </header>
+          <div class="timeline">
+            <span class="timeline__track" aria-hidden="true"><span class="timeline__fill"></span></span>
+            <ol class="timeline__list" aria-label="Professional experience timeline">
+            <li class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+              <article class="card tl-card" data-reveal-item data-reveal-from="left">
+                <span class="tl-card__badge mono" aria-hidden="true">Apr 2025 - Present</span>
+                <h3 class="tl-card__title">Lead AI Engineer <span class="tl-card__sep">-</span> <span class="tl-card__org-inline">Fastweb S.p.A., Rome</span> <span class="date">(Apr 2025 - Present)</span></h3>
+                <ul class="tl-card__list">
+                  <li><strong>Leading LLM and agentic automation initiatives:</strong> design, build, and deploy large language model and multi-agent systems that automate complex, knowledge-intensive workflows end-to-end, taking solutions from research prototypes to production-grade services.</li>
+                  <li><strong>Vision-Language Model (VLM) Retrieval-Augmented Generation (RAG):</strong> develop and optimize multimodal RAG pipelines that jointly reason over visual and textual content for document intelligence, grounding model responses in enterprise knowledge bases to boost factual accuracy and reduce hallucinations.</li>
+                  <li><strong>Steering and fine-tuning of Large Language Models:</strong> apply activation steering, instruction tuning, and parameter-efficient fine-tuning (LoRA/PEFT) to align open- and closed-source LLMs with domain-specific requirements, improving reliability, safety, and downstream task performance.</li>
+                  <li><strong>Agentic voice assistant for task automation:</strong> engineer a real-time, voice-driven assistant on an OpenClaw-style agentic framework, orchestrating tool use, function calling, and speech-to-text / text-to-speech to autonomously execute end-to-end operational tasks.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+              <article class="card tl-card" data-reveal-item data-reveal-from="right">
+                <span class="tl-card__badge mono" aria-hidden="true">Mar 2023 - Apr 2025</span>
+                <h3 class="tl-card__title">Research Scientist <span class="tl-card__sep">-</span> <span class="tl-card__org-inline">McGill &amp; Concordia University - Mila AI Institute, Montréal</span> <span class="date">(Mar 2023 - Apr 2025)</span></h3>
+                <ul class="tl-card__list">
+                  <li><strong>Led AI research projects in Computer Vision:</strong> implemented the latest state-of-the-art computer vision models in collaboration with the Probabilistic Vision Group (McGill), IMPACT Lab (Concordia), and Mila AI Institute (Yoshua Bengio).</li>
+                  <li><strong>Leveraging novel generative AI methods (LLMs) and Causal ML:</strong> zero-shot prediction and causal reasoning in the context of longitudinal disease evolution. Exploited the embedding of tabular and image data to simulate counterfactual scenarios, aiding in the management of risks and side effects of new experimental drugs.</li>
+                  <li><strong>Teaching assistant at McGill University:</strong> taught probability theory, Bayesian inference and deep learning generative models focusing on the mathematical and probabilistic aspect under the supervision of <a href="https://mila.quebec/en/directory/tal-arbel" target="_blank" rel="noopener">Prof. Tal Arbel</a>. Presented research at top-tier conferences (e.g. MICCAI, ICCV, NeurIPS, CVPR).</li>
+                  <li><strong>Research Consultant at University La Sapienza:</strong> provided expert guidance for developing advanced statistical and econometric models for analyzing credit risk and survival of small and medium Italian enterprises. Conducted analysis of balance sheets and financial statements to assess financial health, predict insolvency risks, and identify key economic factors influencing business longevity under the supervision of <a href="https://www.researchgate.net/profile/Angelo-Castaldo" target="_blank" rel="noopener">Prof. Angelo Castaldo</a>.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+              <article class="card tl-card" data-reveal-item data-reveal-from="left">
+                <span class="tl-card__badge mono" aria-hidden="true">Jul 2022 - Mar 2023</span>
+                <h3 class="tl-card__title">Senior Data Scientist <span class="tl-card__sep">-</span> <span class="tl-card__org-inline">Verti S.p.A., Milan</span> <span class="date">(Jul 2022 - Mar 2023)</span></h3>
+                <ul class="tl-card__list">
+                  <li><strong>Developed machine learning and statistical models:</strong> for optimal pricing, churn prediction, and customer retention, utilizing techniques such as regression analysis, gradient boosting, and neural networks. Developed production pipelines, achieving a measurable (+2%) increase in revenue and a (+5%) reduction in customer churn.</li>
+                  <li><strong>Built automated pipelines using AWS SageMaker:</strong> scalable model training, evaluation, and deployment, enabling seamless integration of ML workflows and reducing deployment time (-30%) for production-ready models.</li>
+                  <li><strong>Developed constrained optimization models for risk assessment and profitability:</strong> implemented linear programming and metaheuristic algorithms to determine optimal pricing strategies that balanced risk mitigation with profitability targets.</li>
+                </ul>
+              </article>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+              <article class="card tl-card" data-reveal-item data-reveal-from="right">
+                <span class="tl-card__badge mono" aria-hidden="true">Nov 2017 - May 2019</span>
+                <h3 class="tl-card__title">Big Data Scientist <span class="tl-card__sep">-</span> <span class="tl-card__org-inline">Isiway S.r.l., Rome</span> <span class="date">(Nov 2017 - May 2019)</span></h3>
+                <ul class="tl-card__list">
+                  <li><strong>Implemented ML solutions for big data consulting projects:</strong> implemented deep learning models for predicting human trajectories. Analyzed customer behavior (e.g. mouse tracking) and recommendation systems (+20% retention) for enhanced customer experience.</li>
+                  <li><strong>Web Scraping and NLP for Sentiment Analysis:</strong> developed deep learning-based NLP methods to predict sentiment (positive or negative) from large-scale textual data extracted from web sources, utilizing techniques such as Word Embeddings, Recurrent Neural Networks (RNNs, LSTM) and Transformer for enhanced prediction accuracy (+25%).</li>
+                </ul>
+              </article>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+              <article class="card tl-card" data-reveal-item data-reveal-from="left">
+                <span class="tl-card__badge mono" aria-hidden="true">Apr 2014 - Nov 2017</span>
+                <h3 class="tl-card__title">Data Analyst <span class="tl-card__sep">-</span> <span class="tl-card__org-inline">Invitalia S.p.A., Rome</span> <span class="date">(Apr 2014 - Nov 2017)</span></h3>
+                <ul class="tl-card__list">
+                  <li><strong>Analyzed economic and financial indicators:</strong> in-depth evaluation of the solidity and solvability of publicly listed companies for investment risk assessment and portfolio management strategies.</li>
+                  <li><strong>Developed advanced econometric models for public policy evaluation:</strong> implemented parametric and semi-parametric models for survival analysis of small and medium enterprises. Designed non-parametric methods for clustering and density estimation, and performed probabilistic matching to simulate counterfactual scenarios.</li>
+                </ul>
+              </article>
+            </li>
+            </ol>
+          </div>
+          <div class="section-cta" data-reveal-item>
+            <a class="btn btn--primary btn--lg" href="/assets/CV_Berardino_Barile.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>Download my CV (PDF)</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section id="skills" class="section section--alt" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">04 / Skills</p>
+            <h2 id="skills-title" class="section-title" data-split>Skills &amp; Tools</h2>
+          </header>
+        </div>
+        <div class="marquee" data-reveal-item>
+          <div class="marquee__track">
+            <ul class="marquee__list">
+              <li>Python</li><li>R</li><li>Stata</li><li>Matlab</li><li>SQL</li><li>LaTeX</li><li>Bash</li><li>Java</li><li>GitHub</li>
+              <li>PyTorch</li><li>TensorFlow</li><li>scikit-learn</li><li>NumPy</li><li>Pandas</li><li>SciPy</li><li>CUDA</li>
+              <li>AWS SageMaker</li><li>Docker</li><li>Linux</li>
+              <li>Bayesian Inference</li><li>Probabilistic Modeling</li><li>Causal Inference</li><li>Optimization</li>
+              <li>Deep Learning</li><li>Generative AI</li><li>Image Processing</li>
+            </ul>
+            <ul class="marquee__list" aria-hidden="true">
+              <li>Python</li><li>R</li><li>Stata</li><li>Matlab</li><li>SQL</li><li>LaTeX</li><li>Bash</li><li>Java</li><li>GitHub</li>
+              <li>PyTorch</li><li>TensorFlow</li><li>scikit-learn</li><li>NumPy</li><li>Pandas</li><li>SciPy</li><li>CUDA</li>
+              <li>AWS SageMaker</li><li>Docker</li><li>Linux</li>
+              <li>Bayesian Inference</li><li>Probabilistic Modeling</li><li>Causal Inference</li><li>Optimization</li>
+              <li>Deep Learning</li><li>Generative AI</li><li>Image Processing</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="skills-grid" data-reveal-group>
+            <article class="card skill-card" data-reveal-item>
+              <span class="skill-card__icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+              <h3 class="skill-card__title">Programming &amp; Development:</h3>
+              <ul class="chips" aria-label="Programming tools">
+                <li class="chip">Python</li><li class="chip">R</li><li class="chip">Stata</li><li class="chip">Matlab</li><li class="chip">SQL</li><li class="chip">LaTeX</li><li class="chip">Bash</li><li class="chip">Java</li><li class="chip">GitHub</li>
+              </ul>
+              <p class="skill-card__desc">Used for developing machine learning models, statistical analysis, and data processing in research and industry projects.</p>
+            </article>
+            <article class="card skill-card" data-reveal-item>
+              <span class="skill-card__icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></span>
+              <h3 class="skill-card__title">Machine Learning &amp; AI:</h3>
+              <ul class="chips" aria-label="Machine learning tools">
+                <li class="chip">PyTorch</li><li class="chip">TensorFlow</li><li class="chip">scikit-learn</li><li class="chip">NumPy</li><li class="chip">Pandas</li><li class="chip">SciPy</li><li class="chip">CUDA</li>
+              </ul>
+              <p class="skill-card__desc">Implemented deep learning models for computer vision, probabilistic modeling, and time-series forecasting.</p>
+            </article>
+            <article class="card skill-card" data-reveal-item>
+              <span class="skill-card__icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></span>
+              <h3 class="skill-card__title">Cloud &amp; MLOps:</h3>
+              <ul class="chips" aria-label="Cloud and MLOps tools">
+                <li class="chip">AWS SageMaker</li><li class="chip">Docker</li><li class="chip">Linux</li>
+              </ul>
+              <p class="skill-card__desc">Deployed ML pipelines for large-scale training, model serving, and workflow automation in cloud environments.</p>
+            </article>
+            <article class="card skill-card" data-reveal-item>
+              <span class="skill-card__icon" aria-hidden="true"><i class="fa-solid fa-square-root-variable"></i></span>
+              <h3 class="skill-card__title">Mathematical &amp; Statistical Methods:</h3>
+              <ul class="chips" aria-label="Mathematical and statistical methods">
+                <li class="chip">Bayesian Inference</li><li class="chip">Probabilistic Modeling</li><li class="chip">Causal Inference</li><li class="chip">Optimization</li>
+              </ul>
+              <p class="skill-card__desc">Designed models for counterfactual analysis, risk evaluation, and decision-making in medical imaging and finance.</p>
+            </article>
+            <article class="card skill-card" data-reveal-item>
+              <span class="skill-card__icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></span>
+              <h3 class="skill-card__title">Computer Vision &amp; AI:</h3>
+              <ul class="chips" aria-label="Computer vision and AI">
+                <li class="chip">Deep Learning</li><li class="chip">Generative AI</li><li class="chip">Image Processing</li>
+              </ul>
+              <p class="skill-card__desc">Developed generative models for medical imaging, trajectory prediction, and biomarker discovery.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PUBLICATIONS ============ -->
+      <section id="publications" class="section" aria-labelledby="publications-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">05 / Research</p>
+            <h2 id="publications-title" class="section-title" data-split>Scientific Contributions</h2>
+          </header>
+          <figure class="institutions" data-reveal-item>
+            <img src="/assets/institutions-1400.png" alt="Institutions" width="1400" height="440" decoding="async" />
+          </figure>
+
+          <div class="pubs-grid" data-reveal-group>
+            <div class="card thesis-card" data-reveal-item>
+              <span class="thesis-card__icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+              <div>
+                <p class="thesis-card__label">Doctoral Thesis:</p>
+                <a class="thesis-card__title" href="https://theses.eurasip.org/theses/944/machine-learning-methods-for-multiple-sclerosis/" target="_blank" rel="noopener">"Machine Learning Methods for Multiple Sclerosis Classification and Prediction Using MRI Brain Connectivity"<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <article class="card pub-card" data-reveal-item>
+              <span class="pub-card__year mono">2021</span>
+              <h3 class="pub-card__title">Data Augmentation Using Generative Adversarial Neural Networks (GANs) on Brain Structural Connectivity in Multiple Sclerosis.</h3>
+              <p class="pub-card__meta"><strong><em>Barile B</em></strong>, Marzullo A., Stamile C. et al. 2021, Computer Methods and Programs in Biomedicine, 206:106113</p>
+              <a class="pub-card__link" href="https://hal.science/hal-03241649/document" target="_blank" rel="noopener">Read paper<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+            <article class="card pub-card" data-reveal-item>
+              <span class="pub-card__year mono">2024</span>
+              <h3 class="pub-card__title">Probabilistic Temporal Prediction of Continuous Disease Trajectories and Treatment Effects Using Neural SDEs.</h3>
+              <p class="pub-card__meta"><strong><em>Barile B</em></strong>, Durso-Finley, Falet J.P. et al. 2024, MICCAI (Oct 2024 Conference)</p>
+              <a class="pub-card__link" href="https://arxiv.org/abs/2406.12807" target="_blank" rel="noopener">Read paper<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+            <article class="card pub-card" data-reveal-item>
+              <span class="pub-card__year mono">2025</span>
+              <h3 class="pub-card__title">ADOPT: Adversarial Optimization Strategy for Counterfactual Trajectories of Grey Matter Atrophy.</h3>
+              <p class="pub-card__meta"><strong><em>Barile B</em></strong>, Chen E., Sappey-Marinier D. 2025, IEEE Transaction in Biomedical Imaging (Under review)</p>
+              <span class="pub-card__badge"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>Under review</span>
+            </article>
+            <article class="card pub-card" data-reveal-item>
+              <span class="pub-card__year mono">2020</span>
+              <h3 class="pub-card__title">Tensor Factorization of Brain Structural Graph for Unsupervised Classification in Multiple Sclerosis.</h3>
+              <p class="pub-card__meta"><strong><em>Barile B</em></strong>, Marzullo A., Stamile C. et al. 2020, 25th International Conference on Pattern Recognition (ICPR), Milan (virtual), Italy, pp.5052-5059</p>
+              <a class="pub-card__link" href="https://ieeexplore.ieee.org/document/9412491" target="_blank" rel="noopener">Read paper<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+            <article class="card pub-card" data-reveal-item>
+              <span class="pub-card__year mono">2021</span>
+              <h3 class="pub-card__title">Ensemble Learning for Multiple Sclerosis Disability Estimation Using Brain Structural Connectivity.</h3>
+              <p class="pub-card__meta"><strong><em>Barile B</em></strong>, Marzullo A., Stamile C. et al. 2021, Brain Connectivity, PMID: 34269618</p>
+              <a class="pub-card__link" href="https://www.liebertpub.com/doi/10.1089/brain.2020.1003" target="_blank" rel="noopener">Read paper<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+            <article class="card pub-card" data-reveal-item>
+              <span class="pub-card__year mono">2024</span>
+              <h3 class="pub-card__title">Causal Impact Evaluation of Occupational Safety Policies on Firms’ Default Using ML Uplift Modelling.</h3>
+              <p class="pub-card__meta"><strong><em>Barile B</em></strong>, Forti M., Marrocco A., Castaldo A. 2024, Scientific Reports 14, 10380</p>
+              <a class="pub-card__link" href="https://www.nature.com/articles/s41598-024-60348-4" target="_blank" rel="noopener">Read paper<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+            <article class="card pub-card" data-reveal-item>
+              <span class="pub-card__year mono">2022</span>
+              <h3 class="pub-card__title">New Multiple Sclerosis Lesion Segmentation and Detection Using Pre-activation U-Net.</h3>
+              <p class="pub-card__meta">Ashtari P., <strong><em>Barile B</em></strong>, Van Huffel S. et al. 2022, Frontiers in Neuroscience, 16:975862</p>
+              <a class="pub-card__link" href="https://www.readcube.com/articles/10.3389/fnins.2022.975862" target="_blank" rel="noopener">Read paper<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+            <article class="card pub-card" data-reveal-item>
+              <span class="pub-card__year mono">2022</span>
+              <h3 class="pub-card__title">A Kernel Based Blind Source Separation Approach for Classification of Multiple Sclerosis Clinical Profiles.</h3>
+              <p class="pub-card__meta"><strong><em>Barile B</em></strong>, Ashtari P., Durand-Dubief F. et al. 2022, Proceedings of the 30th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning (ESANN 2022), Bruges, Belgium</p>
+              <a class="pub-card__link" href="https://www.esann.org/sites/default/files/proceedings/2022/ES2022-17.pdf" target="_blank" rel="noopener">Read paper<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </article>
+          </div>
+
+          <div class="section-cta section-cta--row" data-reveal-item>
+            <a class="btn btn--primary btn--lg" href="publications.html"><i class="fa-solid fa-list-ul" aria-hidden="true"></i>View Full Publication List</a>
+            <a class="btn btn--ghost btn--lg" href="https://scholar.google.com/citations?user=odmpMGcAAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i>Google Scholar</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section section--alt section--contact" aria-labelledby="contact-title">
+        <div class="aurora" aria-hidden="true"><span class="aurora__blob aurora__blob--1"></span><span class="aurora__blob aurora__blob--3"></span></div>
+        <div class="container">
+          <header class="section-head section-head--center">
+            <p class="eyebrow">06 / Contact</p>
+            <h2 id="contact-title" class="section-title" data-split>Contact</h2>
+          </header>
+          <div class="contact" data-reveal-group>
+            <a class="card contact-card" href="mailto:berardino.barile@gmail.com" data-reveal-item>
+              <span class="contact-card__icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+              <span class="contact-card__text">Email: berardino.barile@gmail.com</span>
+              <i class="fa-solid fa-arrow-right contact-card__arrow" aria-hidden="true"></i>
+            </a>
+            <ul class="socials" data-reveal-item>
+              <li><a class="social" href="https://scholar.google.com/citations?user=odmpMGcAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i></a></li>
+              <li><a class="social" href="https://www.linkedin.com/in/berardino-barile/?locale=en_US" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a class="social" href="https://github.com/BerardinoB?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+            <p class="contact__see-also" data-reveal-item>See also: <a href="presentation.html">Extended Presentation</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <img src="/assets/logo-280.png" alt="" width="32" height="31" />
+        <p>© 2025 Berardino Barile | All rights reserved</p>
+      </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </body>
+</html>

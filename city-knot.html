@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="no-js" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Island city and knot - Berardino Barile</title>
+    <meta name="description" content="An interactive WebGL animation: an illustrated island city and a twisted viaduct knot you can drag." />
+    <meta name="theme-color" content="#060d11" />
+    <link rel="icon" type="image/png" href="/assets/logo-280.png" />
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.remove('no-js');
+        d.classList.add('js');
+        var t = 'dark';
+        try {
+          var s = localStorage.getItem('bnormal-theme');
+          if (s === 'light' || s === 'dark') t = s;
+        } catch (e) {}
+        d.setAttribute('data-theme', t);
+        setTimeout(function () {
+          if (!window.__animBooted) d.classList.add('anim-fallback');
+        }, 3000);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    />
+    <script type="module" crossorigin src="/assets/cityknot-B3kvwYCO.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/offscreen-BXINgrbA.js">
+    <link rel="modulepreload" crossorigin href="/assets/pages-DJx9RsKa.js">
+    <link rel="stylesheet" crossorigin href="/assets/offscreen-CxXICpaq.css">
+    <link rel="stylesheet" crossorigin href="/assets/cityknot-D1QMuZs5.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+    <header id="site-header" class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="Berardino Barile, home">
+          <img src="/assets/logo-280.png" alt="Logo" width="36" height="35" />
+          <span class="brand__name">Berardino Barile</span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="presentation.html">Presentation</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Light theme">
+            <i class="fa-solid fa-moon theme-toggle__moon" aria-hidden="true"></i>
+            <i class="fa-solid fa-sun theme-toggle__sun" aria-hidden="true"></i>
+          </button>
+          <button id="nav-toggle" class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container">
+          <h1 id="page-title" class="page-hero__title" data-page-in>Island city and knot</h1>
+          <p class="page-hero__subtitle" data-page-in>An illustrated island city beside a twisted viaduct. Drag the knot to turn it.</p>
+        </div>
+      </section>
+      <section class="page-section" aria-label="Animation">
+        <div class="container">
+          <div class="cityknot" data-cityknot data-assets="/assets/cityknot/"></div>
+          <p class="cityknot-caption">Drag the knot, or focus it and use the arrow keys. Leave it alone and it turns back by itself.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <img src="/assets/logo-280.png" alt="" width="32" height="31" />
+        <p>© 2025 Berardino Barile | All rights reserved</p>
+      </div>
+    </footer>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </body>
+</html>
